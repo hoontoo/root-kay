@@ -1,4 +1,4 @@
-# VPS ROOT 用户密码登录、自定义SSH端口一键脚本
+# 服务器自用装机脚本系列
 
 支持CentOS、Debian、Ubuntu等系统的各大厂商的VPS。一个命令，修改登录方式为root+密码、自定义SSH端口
 
