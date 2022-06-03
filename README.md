@@ -17,20 +17,46 @@ wget -N --no-check-certificate https://raw.githubusercontents.com/hoontoo/root-k
 重启服务器
 reboot
 
+
 连接CF WARP为服务器添加IPv4/IPv6网络
+
 wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh [option] [lisence]
 
 再次运行
+
 warp [option] [lisence]
 
 设置warp Teams的专属通道
+
 文件管理器打开 /etc/wireguard 目录，修改warp 文件
 
 Private key: vWDyz6VK/fK2IalsG02wGtNdPuhQ3n4+iBaXpT30aZA=
+
 Public key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo= 
+
 Address IPv4: 172.16.0.2/32 
+
 Address IPv6: fd01:5ca1:ab1e:8a54:563e:ddf3:ffa4:9ebc/128 
 
 x-ui修改面版
+
 wget -N https://raw.githubusercontents.com/hoontoo/x-ui-yg/main/install.sh && bash install.sh
+
+ 本地电脑添加IPV6隧道代码：
+
+开启隧道：
+
+Win+X 打开 Windows PowerShell（管理员）（右击自动粘贴）
+
+netsh interface teredo set state enterpriseclient server=default
+
+netsh interface ipv6 reset
+
+netsh interface teredo set state server=teredo.remlab.net
+
+关闭隧道：
+
+Win+X 打开 Windows PowerShell（管理员）（右击自动粘贴）
+
+netsh interface Teredo set state disable
 
