@@ -14,9 +14,23 @@ wget -N --no-check-certificate https://raw.githubusercontents.com/hoontoo/root-k
 
 最后设置SSH端口和密码即可
 
-## 赞助我们
+重启服务器
+reboot
 
-![afdian-MisakaNo.jpg](https://s2.loli.net/2021/12/25/SimocqwhVg89NQJ.jpg)
+连接CF WARP为服务器添加IPv4/IPv6网络
+wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh [option] [lisence]
 
-## 交流群
-[Telegram](https://t.me/misakanetcn)
+再次运行
+warp [option] [lisence]
+
+设置warp Teams的专属通道
+文件管理器打开 /etc/wireguard 目录，修改warp 文件
+
+Private key: vWDyz6VK/fK2IalsG02wGtNdPuhQ3n4+iBaXpT30aZA=
+Public key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo= 
+Address IPv4: 172.16.0.2/32 
+Address IPv6: fd01:5ca1:ab1e:8a54:563e:ddf3:ffa4:9ebc/128 
+
+x-ui修改面版
+wget -N https://raw.githubusercontents.com/hoontoo/x-ui-yg/main/install.sh && bash install.sh
+
